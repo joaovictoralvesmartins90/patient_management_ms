@@ -1,0 +1,51 @@
+# Maven
+target/
+!**/src/main/**/target/
+!**/src/test/**/target/
+.mvn/wrapper/maven-wrapper.jar
+
+# Gradle (caso algum módulo venha a usar)
+build/
+!**/src/main/**/build/
+!**/src/test/**/build/
+.gradle/
+
+# IDEs
+.idea/
+*.iws
+*.iml
+*.ipr
+.vscode/
+.classpath
+.project
+.settings/
+.factorypath
+.apt_generated
+.springBeans
+.sts4-cache
+
+# NetBeans
+/nbproject/private/
+/nbbuild/
+/dist/
+/nbdist/
+/.nb-gradle/
+
+# Logs
+*.log
+logs/
+
+# Variáveis de ambiente / segredos locais
+.env
+.env.*
+*.env
+
+# Dados de volumes Docker (Postgres, etc.)
+db_volumes/
+
+# Sistema operacional
+.DS_Store
+Thumbs.db
+
+# HELP.md gerado pelo Spring Initializr
+HELP.md
