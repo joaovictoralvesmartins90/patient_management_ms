@@ -11,7 +11,10 @@ build/
 .gradle/
 
 # IDEs
-.idea/
+.idea/*
+# ...mas compartilha as run configurations do IntelliJ com o time
+!.idea/runConfigurations/
+!.idea/runConfigurations/**
 *.iws
 *.iml
 *.ipr
