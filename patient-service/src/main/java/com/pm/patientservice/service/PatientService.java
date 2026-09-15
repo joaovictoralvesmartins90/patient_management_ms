@@ -42,10 +42,10 @@ public class PatientService {
         Patient patientReturnFromSave = patientRepository.save(patientToBeSaved);
 
         //grpc para o billing service
-        billingServiceGrpcClient.createBillingAccount(
+        /*billingServiceGrpcClient.createBillingAccount(
                 patientReturnFromSave.getId().toString(),
                 patientReturnFromSave.getName(),
-                patientReturnFromSave.getEmail());
+                patientReturnFromSave.getEmail());*/
 
         //enviar evento kafka
         kafkaProducer.sendEvent(patientReturnFromSave);

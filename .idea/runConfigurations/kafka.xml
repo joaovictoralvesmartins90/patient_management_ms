@@ -34,6 +34,10 @@
               <option name="name" value="KAFKA_PROCESS_ROLES" />
               <option name="value" value="controller,broker" />
             </DockerEnvVarImpl>
+            <DockerEnvVarImpl>
+              <option name="name" value="KAFKA_OFFSETS_TOPIC_REPLICATION_FACTOR" />
+              <option name="value" value="1" />
+            </DockerEnvVarImpl>
           </list>
         </option>
         <option name="portBindings">
